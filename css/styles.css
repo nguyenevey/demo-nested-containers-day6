@@ -4,3 +4,44 @@
 *::after {
   box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.inner-container {
+  max-width: 1000px;
+  margin: 0 auto;
+ }
+
+ .flex-container {
+  display: flex;
+  gap: 24px;
+ }
+
+ p {
+  margin-bottom: 20px;
+ }
+
+ header {
+  padding: 24px 0;
+  background-color:  #ECA400;
+  color: #f2f2f2;
+
+ }
+
+ main {
+  padding: 44px 0;
+  background-color: #f2f2f2;
+ }
+
+  section {
+    display: flex;/* default is Row direction */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 488px; /*(1000 max width - 24px gap) / 2 (# of sections) = 488px */
+    padding: 16px;/* when determining the width of a box, the padding isn't included in the width of the box bc of box sizing rules */
+    background-color: #ffe6a7;
+ }
+/* Utility css ^^^ */
